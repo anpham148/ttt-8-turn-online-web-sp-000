@@ -35,7 +35,7 @@ def turn(board)
     if valid_move?(board, index)
       move(board, index, character = "X")
     else
-      until valid_move?(board, index)
+      until !valid_move?(board, index)
         turn(board)
       end
     end
